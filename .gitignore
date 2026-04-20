@@ -1,0 +1,24 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs / local
+*.log
+.env
+.env.local
+
+# Node (in case anyone adds tooling later)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# The original brief stays local — not part of the published site.
+ebpubcrawl.txt
