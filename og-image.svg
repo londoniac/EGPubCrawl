@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="The Pint & Index — East Grinstead">
+  <defs>
+    <pattern id="grain" x="0" y="0" width="7" height="7" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.6" fill="#000" opacity="0.05"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="#f5ecd9"/>
+  <rect width="1200" height="630" fill="url(#grain)"/>
+
+  <!-- Top/bottom rules -->
+  <rect x="60" y="60" width="1080" height="6" fill="#2b1e10"/>
+  <rect x="60" y="76" width="1080" height="2" fill="#2b1e10"/>
+  <rect x="60" y="552" width="1080" height="2" fill="#2b1e10"/>
+  <rect x="60" y="560" width="1080" height="6" fill="#2b1e10"/>
+
+  <!-- Dateline -->
+  <text x="600" y="130" text-anchor="middle"
+        font-family="'JetBrains Mono', 'Courier New', monospace"
+        font-size="22" letter-spacing="7" fill="#3d2817">
+    VOL. I · NO. 1 · EAST GRINSTEAD, WEST SUSSEX
+  </text>
+
+  <!-- Title -->
+  <text x="600" y="310" text-anchor="middle"
+        font-family="'Playfair Display', 'Times New Roman', Georgia, serif"
+        font-weight="900" font-size="180" fill="#2b1e10" letter-spacing="-3">
+    The Pint<tspan font-style="italic" font-weight="400" fill="#a01e1e" dx="14" dy="0">&amp;</tspan><tspan dx="14">Index</tspan>
+  </text>
+
+  <!-- Standfirst -->
+  <text x="600" y="395" text-anchor="middle"
+        font-family="'Cormorant Garamond', Georgia, serif"
+        font-style="italic" font-size="36" fill="#2b1e10">
+    A ruthlessly investigated survey of ale, lager
+  </text>
+  <text x="600" y="438" text-anchor="middle"
+        font-family="'Cormorant Garamond', Georgia, serif"
+        font-style="italic" font-size="36" fill="#2b1e10">
+    and liquid refreshment.
+  </text>
+
+  <!-- Flourish -->
+  <text x="600" y="505" text-anchor="middle"
+        font-family="Georgia, serif" font-size="34" fill="#b58a3b" letter-spacing="30">
+    ❦   ❦   ❦
+  </text>
+
+  <!-- Tagline -->
+  <text x="600" y="600" text-anchor="middle"
+        font-family="'JetBrains Mono', 'Courier New', monospace"
+        font-size="18" letter-spacing="6" fill="#8a6625">
+    PUBLISHED BY THE DADS · FOR THE DADS
+  </text>
+</svg>
