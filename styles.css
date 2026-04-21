@@ -193,6 +193,106 @@ a:hover { color: var(--crimson-deep); }
   letter-spacing: 10px;
 }
 
+/* ========================= ANTHEM ========================= */
+.anthem-section { margin-top: 32px; }
+
+.anthem {
+  border: 2px solid var(--ink);
+  background: var(--parchment-deep);
+  padding: 18px 16px 20px;
+  box-shadow: var(--shadow-hard);
+  position: relative;
+}
+
+.anthem::before {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border: 1px dashed var(--rule);
+  pointer-events: none;
+}
+
+.anthem-head { text-align: center; margin-bottom: 12px; }
+.anthem-head .section-eyebrow { color: var(--brass-deep); }
+.anthem-head .section-title { font-size: clamp(26px, 6.5vw, 38px); }
+
+.anthem-epigraph {
+  font-family: var(--serif-body);
+  font-style: italic;
+  color: var(--ink);
+  font-size: clamp(15px, 3.8vw, 18px);
+  max-width: 38ch;
+  margin: 8px auto 0;
+  line-height: 1.35;
+}
+
+.anthem audio {
+  display: block;
+  width: 100%;
+  margin: 10px 0 8px;
+  border-radius: 0;
+  filter: sepia(0.25) hue-rotate(-10deg) saturate(0.9);
+}
+
+.anthem-meta {
+  text-align: center;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--brass-deep);
+  margin-bottom: 10px;
+}
+.anthem-meta span + span { margin-left: 4px; }
+
+.anthem-toggle {
+  display: block;
+  margin: 0 auto;
+  background: transparent;
+  border: 1.5px solid var(--ink);
+  padding: 6px 12px;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink);
+  box-shadow: var(--shadow-hard-sm);
+  transition: transform 80ms ease, box-shadow 80ms ease, background 80ms ease;
+}
+.anthem-toggle:hover { background: var(--ink); color: var(--parchment); }
+.anthem-toggle:active { transform: translate(3px, 3px); box-shadow: 0 0 0 var(--wood); }
+
+.anthem-lyrics {
+  margin-top: 14px;
+  padding: 14px 12px;
+  background: var(--parchment);
+  border: 1px solid var(--rule);
+  font-family: var(--serif-body);
+  font-size: 17px;
+  line-height: 1.5;
+  column-count: 1;
+}
+.anthem-lyrics[hidden] { display: none; }
+.anthem-lyrics p { margin: 0 0 12px; }
+.anthem-lyrics p:last-child { margin-bottom: 0; }
+.anthem-lyrics .l-part {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--brass-deep);
+  margin: 6px 0 4px;
+}
+.anthem-lyrics em {
+  color: var(--crimson);
+  font-style: italic;
+}
+
+@media (min-width: 640px) {
+  .anthem-lyrics { column-count: 2; column-gap: 28px; }
+  .anthem-lyrics p { break-inside: avoid; }
+}
+
 /* ========================= BUTTONS & CHIPS ========================= */
 .btn {
   display: inline-block;

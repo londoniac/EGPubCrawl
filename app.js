@@ -597,9 +597,28 @@
   /* ===================================================================
    * Boot
    * ================================================================= */
+  function bindAnthem() {
+    const btn = document.getElementById("anthem-toggle");
+    const panel = document.getElementById("anthem-lyrics");
+    if (!btn || !panel) return;
+    btn.addEventListener("click", () => {
+      const open = panel.hasAttribute("hidden") ? true : false;
+      if (open) {
+        panel.removeAttribute("hidden");
+        btn.setAttribute("aria-expanded", "true");
+        btn.textContent = "Hide lyrics ▴";
+      } else {
+        panel.setAttribute("hidden", "");
+        btn.setAttribute("aria-expanded", "false");
+        btn.textContent = "Show lyrics ▾";
+      }
+    });
+  }
+
   function init() {
     document.getElementById("last-updated").textContent = LAST_UPDATED;
 
+    bindAnthem();
     renderLeaderboard();
     renderWeightRows();
     updateWeightSum();
